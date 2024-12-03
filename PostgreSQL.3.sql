@@ -6,11 +6,11 @@ CREATE TABLE clientes (
 );
 
 INSERT INTO clientes (nome, email, data_cadastro) VALUES
-('João Silva', 'joao.silva@email.com', '2024-12-01 09:30:00'),
-('Maria Oliveira', 'maria.oliveira@email.com', '2024-12-01 10:45:00'),
-('Carlos Santos', 'carlos.santos@email.com', '2024-12-02 11:15:00'),
-('Ana Costa', 'ana.costa@email.com', '2024-12-02 14:20:00'),
-('Paulo Souza', 'paulo.souza@email.com', '2024-12-03 16:50:00');
+('Adilson silva', 'adilson.silva@email.com', '2024-12-02 08:30:00'),
+('Eder Oliveira', 'eder.oliveira@email.com', '2024-12-02 11:45:00'),
+('Carlos Almeida', 'carlos.almeida@email.com', '2024-12-03 13:15:00'),
+('Francy Meins', 'bruna.meins@email.com', '2024-12-03 15:20:00'),
+('Paulo Sergio', 'paulo.sergio@email.com', '2024-12-04 18:50:00');
 
 CREATE OR REPLACE FUNCTION soma_clientes_cadastrados(data_dia DATE)
 RETURNS INT AS $$
@@ -25,4 +25,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-SELECT soma_clientes_cadastrados('2024-12-01');
+SELECT soma_clientes_cadastrados('2024-12-02');
