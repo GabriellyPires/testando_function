@@ -13,16 +13,16 @@ CREATE TABLE vendas (
 );
 
 INSERT INTO produtos (nome, preco) VALUES
-('Produto A', 10.50),
-('Produto B', 20.00),
-('Produto C', 15.75);
+('Produto A', 12.99),
+('Produto B', 20.99),
+('Produto C', 15.99);
 
 INSERT INTO vendas (id_produto, data_venda, quantidade) VALUES
-(1, '2024-12-01 10:30:00', 5),
-(2, '2024-12-01 11:00:00', 2),
-(1, '2024-12-02 09:15:00', 3),
-(3, '2024-12-02 14:20:00', 4),
-(2, '2024-12-02 16:45:00', 1);
+(1, '2024-12-03 10:50:00', 6),
+(2, '2024-12-03 13:00:00', 4),
+(1, '2024-12-04 08:15:00', 4),
+(3, '2024-12-04 15:20:00', 3),
+(2, '2024-12-04 17:35:00', 2);
 
 
 CREATE OR REPLACE FUNCTION levantamento_diario()
